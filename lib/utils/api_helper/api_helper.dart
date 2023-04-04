@@ -3,6 +3,9 @@ import 'package:api_calling/screen/home/model/home_model.dart';
 import 'package:http/http.dart' as http;
 
 class apiHelper{
+
+  List<dynamic> jsonList = [];
+
   Future<List> callApi() async {
     String apiLink = "https://fakestoreapi.com/products";
 
@@ -10,7 +13,8 @@ class apiHelper{
     var response = await http.get(uri);
     var json = jsonDecode(response.body);
 
-    List<dynamic> jsonList = json.map((e) => Ecommerce().factory(e)).toList();
+    // List<dynamic>
+    jsonList = json.map((e) => Ecommerce().factory(e)).toList();
     return jsonList;
   }
 }

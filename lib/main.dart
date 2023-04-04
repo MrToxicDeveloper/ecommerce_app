@@ -1,3 +1,4 @@
+import 'package:api_calling/screen/detail/view/detail_view.dart';
 import 'package:api_calling/screen/home/provider/home_provider.dart';
 import 'package:api_calling/screen/home/view/home_view.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,92 @@ void main() {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeView(),
+        routes: {
+          '/': (context) => HomeView(),
+          'detail': (context) => DetailView(),
+        },
+        // home: HomeView(),
       ),
     ),
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ayushman's code
